@@ -47,4 +47,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv1"/>
 
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="check"
+        android:layout_below="@id/tv2"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/breakLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------------------------------------"
+        android:layout_below="@id/btnCheck"/>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakLine"></ListView>
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakLine"
+        android:layout_toRightOf="@id/list1"></ListView>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list1"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
