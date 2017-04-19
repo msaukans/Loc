@@ -128,14 +128,14 @@ public class MainActivity extends AppCompatActivity implements OnCheckedChangeLi
 
             Location dest_location2 = new Location("");
             String lat2 = "52.336916";
-            String lon2 = "-6.463338099999987";//meant to be -6
+            String lon2 = "-6.463338099999987";
             dest_location2.setLatitude(Double.parseDouble(lat2));
             dest_location2.setLongitude(Double.parseDouble(lon2));
             //Double distance2 = Double.valueOf(mylocation.distanceTo(dest_location2));
 
 
             Double dist = 100000.00;
-            arr1.add(dest_location2);
+            arr1.add(dest_location2);//TODO arrayList 1
 
             Double distance2 = (double) mylocation.distanceTo(arr1.get(0));
             tv1.setText(Double.toString(distance2));
